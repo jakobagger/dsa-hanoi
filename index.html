@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hanoi</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+    <div class="left-sidebar">
+        <div class="new-game">
+            <select name="discs" id="discSelect">
+                <option value="1" selected>1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+            </select>
+            <button id="newGameBtn">New Game</button>
+        </div>
+        <div class="speed">
+            <p>Speed</p>
+            <input type="range" id="speedRange" step="1" max="100"
+            value="100">
+        </div>
+        <div class="buttons">
+            <button id="solveBtn">Solve</button>
+        </div>
+        
+    </div>
+    <div class="stage">
+        <div class="tower">
+            <div class="stem"></div>
+            <div class="plate"></div>
+        </div>
+        <div class="tower">
+            <div class="stem"></div>
+            <div class="plate"></div>
+        </div>
+        <div class="tower">
+            <div class="stem"></div>
+            <div class="plate"></div>
+        </div>
+    </div>
+</div>
+    <script src="script.js"></script>
+</body>
+</html>
